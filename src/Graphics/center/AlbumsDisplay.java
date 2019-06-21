@@ -7,51 +7,51 @@ import java.awt.*;
 
 public class AlbumsDisplay extends JPanel{
 
-        JPanel right = new JPanel(new FlowLayout());
-        JPanel left = new JPanel(new FlowLayout());
-        JPanel center = new JPanel(new FlowLayout());
+    JPanel right = new JPanel(new FlowLayout());
+    JPanel left = new JPanel(new FlowLayout());
+    JPanel center = new JPanel(new FlowLayout());
 
-        public AlbumsDisplay(){
-            super();
-
-
-            left.setLayout(new GridLayout(2,1));
-            left.setBackground(new Color(3, 11, 21));
-
-            center.setLayout(new GridLayout( 2,1));
-            center.setBackground(new Color(3 ,11 ,21));
-
-            right.setLayout(new GridLayout(2 ,3));
-            right.setBackground(new Color(3 ,11 ,21));
+    public AlbumsDisplay(){
+        super();
 
 
-            leftPanelDesign();
-            centerPanelDesign();
-            rightPanelDesign();
+        left.setLayout(new GridLayout(2,1));
+        left.setBackground(new Color(3, 11, 21));
+
+        center.setLayout(new GridLayout( 2,1));
+        center.setBackground(new Color(3 ,11 ,21));
+
+        right.setLayout(new GridLayout(2 ,3));
+        right.setBackground(new Color(3 ,11 ,21));
 
 
-            this.add(left , BorderLayout.WEST);
-            this.add(center , BorderLayout.CENTER);
-            this.add(right , BorderLayout.EAST);
-            this.setVisible(true);
+        leftPanelDesign();
+        centerPanelDesign();
+        rightPanelDesign();
 
-        }
 
-        public void leftPanelDesign(){
+        this.add(left , BorderLayout.WEST);
+        this.add(center , BorderLayout.CENTER);
+        this.add(right , BorderLayout.EAST);
+        this.setVisible(true);
 
-            JButton leftAlbumUP = new JButton("Left Button Up");
-            JButton leftAlbumDown = new JButton("Left Button Down");
-            Create(leftAlbumUP, left);
-            Create(leftAlbumDown , left);
+    }
 
-        }
+    public void leftPanelDesign(){
 
-        public void centerPanelDesign(){
-            JButton centerAlbumUP = new JButton("Center Button Up");
-            JButton centerAlbumDown = new JButton("Center Button Down");
-            Create(centerAlbumUP, center);
-            Create(centerAlbumDown , center);
-        }
+        JButton leftAlbumUP = new JButton("Left Button Up");
+        JButton leftAlbumDown = new JButton("Left Button Down");
+        Create(leftAlbumUP, left);
+        Create(leftAlbumDown , left);
+
+    }
+
+    public void centerPanelDesign(){
+        JButton centerAlbumUP = new JButton("Center Button Up");
+        JButton centerAlbumDown = new JButton("Center Button Down");
+        Create(centerAlbumUP, center);
+        Create(centerAlbumDown , center);
+    }
 
     public void rightPanelDesign(){
         JButton rightAlbumUP = new JButton("Right Button UP");
@@ -64,7 +64,7 @@ public class AlbumsDisplay extends JPanel{
         setButtonsProperties(name);
         panel.setLayout(new GridLayout(2 ,1));
         panel.setBackground(new Color(3, 11, 21));
-        panel.setPreferredSize(new Dimension(350  ,790));
+        panel.setPreferredSize(new Dimension(500  ,784));
         panel.add(name);
         panel.setVisible(true);
     }

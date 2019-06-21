@@ -49,4 +49,6 @@ public class Graphics extends JFrame {
         this.add(new JScrollPane(center),BorderLayout.CENTER);
     }
 
+
+
 }
